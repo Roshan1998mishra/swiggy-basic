@@ -1,14 +1,15 @@
 // pages/menu.js
-
 import Head from 'next/head';
 import Link from 'next/link';
+import Image from 'next/image';
+import burger from "@/public/burger.jpg"
 
 const Menu = () => {
   return (
     <div>
       <Head>
         <title>Swiggy-basic App</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+        {/* <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" /> */}
       </Head>
 
       <div className="container">
@@ -18,7 +19,7 @@ const Menu = () => {
           {/* Sample Menu Items */}
           <div className="col-md-4 mb-4">
             <div className="card">
-              <img src="/sample-item1.jpg" className="card-img-top" alt="Sample Item 1" />
+              <Image src={burger} alt='burger'></Image>
               <div className="card-body">
                 <h5 className="card-title">Item 1</h5>
                 <p className="card-text">Description of item 1.</p>
@@ -31,7 +32,7 @@ const Menu = () => {
 
           <div className="col-md-4 mb-4">
             <div className="card">
-              <img src="/sample-item2.jpg" className="card-img-top" alt="Sample Item 2" />
+            <Image src={burger} alt='burger'></Image>
               <div className="card-body">
                 <h5 className="card-title">Item 2</h5>
                 <p className="card-text">Description of item 2.</p>
@@ -46,7 +47,7 @@ const Menu = () => {
 
           <div className="col-md-4 mb-4">
             <div className="card">
-              <img src="/sample-item1.jpg" className="card-img-top" alt="Sample Item 1" />
+            <Image src={burger} alt='burger'></Image>
               <div className="card-body">
                 <h5 className="card-title">Item 1</h5>
                 <p className="card-text">Description of item 1.</p>
@@ -59,7 +60,7 @@ const Menu = () => {
 
           <div className="col-md-4 mb-4">
             <div className="card">
-              <img src="/sample-item2.jpg" className="card-img-top" alt="Sample Item 2" />
+            <Image src={burger} alt='burger'></Image>
               <div className="card-body">
                 <h5 className="card-title">Item 2</h5>
                 <p className="card-text">Description of item 2.</p>
