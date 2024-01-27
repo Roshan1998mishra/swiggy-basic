@@ -6,7 +6,7 @@ import banner from "@/public/banner.jpg";
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage menu open/close
-    const head = ["About", "Career", "Contact Us"];
+    const head = ["About", "Career", "Menu", "Contact Us"];
 
     return (
         <>
