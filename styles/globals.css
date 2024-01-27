@@ -1,33 +1,78 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* In your CSS file */
+@import '~@fortawesome/fontawesome-free/css/all.css';
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+body {
+  padding: 0;
+  margin: 0;
+}
+ ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  padding-top: 1rem;
+ }
+ul li a  {
+  color: #fff;
+  text-decoration: none;
+}
+ .head {
+  background-color: blueviolet;
+  color: #fff;
+ }
+ /* CSS */
+.menu {
+  display: flex;
+  list-style-type: none;
+  padding: 1rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.menu li {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.toggle-icon {
+  display: none; /* Initially hide the toggle icon */
+  cursor: pointer;
+}
+.about{
+  color: red;
+  font-size:7rem;
+  padding-bottom: 1rem;
+
+}
+a {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+@media (max-width: 625px) {
+  .toggle-icon {
+      display: block; /* Show the toggle icon on small screens */
+      
+  }
+
+  .menu {
+      display: none; /* Hide the menu by default on small screens */
+      flex-direction: column;
+      padding-top: 10px; /* Adjust spacing */
+  }
+
+  .menu.open {
+      display: flex; /* Show the menu when open */
+      
+  }
+  .head {
+    height: auto;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@media (max-width:768px) {
+  .about{
+    font-size: 24px;
   }
 }
