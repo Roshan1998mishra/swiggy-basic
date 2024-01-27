@@ -29,8 +29,7 @@ const Menu = () => {
                   <p className="btn btn-primary">View Details</p>
                 </Link>
                   <div className='flex space-x-4 ...'>
-                  <button type='button' className='btn btn-danger' onClick={()=> setCount(count+1)}>+</button>
-                  <button type='button' className='btn btn-danger' onClick={()=> setCount(count-1)}>-</button>
+                  <button type='button' className='btn btn-danger' onClick={()=> setCount(count+1)}>Add item</button>
                   </div>
               </div>
             </div>
@@ -47,8 +46,7 @@ const Menu = () => {
                 </Link>
             
                   <div className='flex space-x-4 ...'>
-                  <button type='button' className='btn btn-danger' onClick={()=> setCount(count+1)}>+</button>
-                  <button type='button' className='btn btn-danger' onClick={()=> setCount(count-1)}>-</button>
+                  <button type='button' className='btn btn-danger' onClick={()=> setCount(count+1)}>Add item</button>
                   </div>
               </div>
             </div>
@@ -67,8 +65,7 @@ const Menu = () => {
                 </Link>
     
                   <div className='flex space-x-4 ...'>
-                  <button type='button' className='btn btn-danger' onClick={()=> setCount(count+1)}>+</button>
-                  <button type='button' className='btn btn-danger' onClick={()=> setCount(count-1)}>-</button>
+                  <button type='button' className='btn btn-danger' onClick={()=> setCount(count+1)}>Add item</button>
                   </div>
               </div>
             </div>
@@ -85,8 +82,8 @@ const Menu = () => {
                 </Link>
 
                   <div className='flex space-x-4 ...'>
-                  <button type='button' className='btn btn-danger' onClick={()=> setCount(count+1)}>+</button>
-                  <button type='button' className='btn btn-danger' onClick={()=> setCount(count-1)}>-</button>
+                  <button type='button' className='btn btn-danger' onClick={()=> setCount(count+1)}>Add item</button>
+                  
                   </div>
                   
 
