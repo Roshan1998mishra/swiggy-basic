@@ -66,7 +66,7 @@ a {
 @media (max-width: 625px) {
   .toggle-icon {
       display: block; /* Show the toggle icon on small screens */
-      
+      padding-top: 10px;
   }
 
   .menu {
@@ -80,10 +80,10 @@ a {
       
   }
   .head {
-    height: auto;
+    height:8vh;
   }
   .cartt {
-    top:0%;
+    top:3%;
   }
 }
 
