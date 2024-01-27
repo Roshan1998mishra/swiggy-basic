@@ -98,8 +98,8 @@ const Menu = () => {
       </div>
 
     <div className="container">
-        {count}
-      <i class="fa-solid fa-cart-shopping cartt">{count}</i>
+        <p id='item'>{count}</p>
+        <i class="fa-solid fa-cart-shopping cartt">{count}</i>
     </div>
 
 
