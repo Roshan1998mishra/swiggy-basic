@@ -28,7 +28,6 @@ const Menu = () => {
                 <Link href="/menu/item1">
                   <p className="btn btn-primary">View Details</p>
                 </Link>
-                <p>Your Item {count} here show:</p>
                   <div className='flex space-x-4 ...'>
                   <button type='button' className='btn btn-danger' onClick={()=> setCount(count+1)}>+</button>
                   <button type='button' className='btn btn-danger' onClick={()=> setCount(count-1)}>-</button>
@@ -46,7 +45,7 @@ const Menu = () => {
                 <Link href="/menu/item2">
                   <p className="btn btn-primary">View Details</p>
                 </Link>
-                <p>Your Item {count} here show:</p>
+            
                   <div className='flex space-x-4 ...'>
                   <button type='button' className='btn btn-danger' onClick={()=> setCount(count+1)}>+</button>
                   <button type='button' className='btn btn-danger' onClick={()=> setCount(count-1)}>-</button>
@@ -66,7 +65,7 @@ const Menu = () => {
                 <Link href="/menu/item1">
                   <p className="btn btn-primary">View Details</p>
                 </Link>
-                <p>Your Item {count} here show:</p>
+    
                   <div className='flex space-x-4 ...'>
                   <button type='button' className='btn btn-danger' onClick={()=> setCount(count+1)}>+</button>
                   <button type='button' className='btn btn-danger' onClick={()=> setCount(count-1)}>-</button>
@@ -84,7 +83,7 @@ const Menu = () => {
                 <Link href="/menu/item2">
                   <p className="btn btn-primary">View Details</p>
                 </Link>
-                <p>Your Item {count} here show:</p>
+
                   <div className='flex space-x-4 ...'>
                   <button type='button' className='btn btn-danger' onClick={()=> setCount(count+1)}>+</button>
                   <button type='button' className='btn btn-danger' onClick={()=> setCount(count-1)}>-</button>
@@ -97,6 +96,13 @@ const Menu = () => {
 
         </div>
       </div>
+
+    <div className="container">
+        {count}
+      <i class="fa-solid fa-cart-shopping cartt">{count}</i>
+    </div>
+
+
     </div>
   );
 };

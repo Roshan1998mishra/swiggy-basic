@@ -8,6 +8,8 @@ const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage menu open/close
     const head = ["About", "Career", "Menu", "Contact Us"];
 
+    const [count,setCount] = useState(0);
+
     return (
         <>
             <div className="head">
@@ -32,10 +34,9 @@ const Header = () => {
                 <Image src={banner} alt="banner"></Image> 
             </div>
 
-            <div className="container">
-                
+            {/* <div className="container">
             <i class="fa-solid fa-cart-shopping cart"></i>
-           </div>
+           </div> */}
         </>
     );
 };
