@@ -98,7 +98,6 @@ const Menu = () => {
       </div>
 
     <div className="container">
-        <p id='item'>{count}</p>
         <i class="fa-solid fa-cart-shopping cartt">{count}</i>
     </div>
 
