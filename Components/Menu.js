@@ -49,7 +49,7 @@ const Menu = () => {
             <div className="card">
             <Image src={burger} alt='burger'></Image>
               <div className="card-body">
-                <h5 className="card-title">Item 1</h5>
+                <h5 className="card-title">Item 3</h5>
                 <p className="card-text">Description of item 1.</p>
                 <Link href="/menu/item1">
                   <p className="btn btn-primary">View Details</p>
@@ -62,7 +62,7 @@ const Menu = () => {
             <div className="card">
             <Image src={burger} alt='burger'></Image>
               <div className="card-body">
-                <h5 className="card-title">Item 2</h5>
+                <h5 className="card-title">Item 4</h5>
                 <p className="card-text">Description of item 2.</p>
                 <Link href="/menu/item2">
                   <p className="btn btn-primary">View Details</p>
