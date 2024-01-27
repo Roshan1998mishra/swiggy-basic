@@ -31,6 +31,11 @@ const Header = () => {
             <div className="banner">
                 <Image src={banner} alt="banner"></Image> 
             </div>
+
+            <div className="container">
+                
+            <i class="fa-solid fa-cart-shopping cart"></i>
+           </div>
         </>
     );
 };

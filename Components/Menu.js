@@ -3,8 +3,10 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 import burger from "@/public/burger.jpg"
+import { useState } from 'react';
 
 const Menu = () => {
+    const [count,setCount]=useState(0);
   return (
     <div>
       <Head>
@@ -26,6 +28,11 @@ const Menu = () => {
                 <Link href="/menu/item1">
                   <p className="btn btn-primary">View Details</p>
                 </Link>
+                <p>Your Item {count} here show:</p>
+                  <div className='flex space-x-4 ...'>
+                  <button type='button' className='btn btn-danger' onClick={()=> setCount(count+1)}>+</button>
+                  <button type='button' className='btn btn-danger' onClick={()=> setCount(count-1)}>-</button>
+                  </div>
               </div>
             </div>
           </div>
@@ -39,6 +46,11 @@ const Menu = () => {
                 <Link href="/menu/item2">
                   <p className="btn btn-primary">View Details</p>
                 </Link>
+                <p>Your Item {count} here show:</p>
+                  <div className='flex space-x-4 ...'>
+                  <button type='button' className='btn btn-danger' onClick={()=> setCount(count+1)}>+</button>
+                  <button type='button' className='btn btn-danger' onClick={()=> setCount(count-1)}>-</button>
+                  </div>
               </div>
             </div>
           </div>
@@ -54,6 +66,11 @@ const Menu = () => {
                 <Link href="/menu/item1">
                   <p className="btn btn-primary">View Details</p>
                 </Link>
+                <p>Your Item {count} here show:</p>
+                  <div className='flex space-x-4 ...'>
+                  <button type='button' className='btn btn-danger' onClick={()=> setCount(count+1)}>+</button>
+                  <button type='button' className='btn btn-danger' onClick={()=> setCount(count-1)}>-</button>
+                  </div>
               </div>
             </div>
           </div>
@@ -67,6 +84,13 @@ const Menu = () => {
                 <Link href="/menu/item2">
                   <p className="btn btn-primary">View Details</p>
                 </Link>
+                <p>Your Item {count} here show:</p>
+                  <div className='flex space-x-4 ...'>
+                  <button type='button' className='btn btn-danger' onClick={()=> setCount(count+1)}>+</button>
+                  <button type='button' className='btn btn-danger' onClick={()=> setCount(count-1)}>-</button>
+                  </div>
+                  
+
               </div>
             </div>
           </div>
